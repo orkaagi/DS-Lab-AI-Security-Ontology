@@ -1,0 +1,102 @@
+@article{no1_open_source_review_24,
+title = {Synthetic data generation methods in healthcare: A review on open-source tools and methods},
+journal = {Computational and Structural Biotechnology Journal},
+volume = {23},
+pages = {2892-2910},
+year = {2024},
+issn = {2001-0370},
+doi = {https://doi.org/10.1016/j.csbj.2024.07.005},
+url = {https://www.sciencedirect.com/science/article/pii/S2001037024002393},
+author = {Vasileios C. Pezoulas and Dimitrios I. Zaridis and Eugenia Mylona and Christos Androutsos and Kosmas Apostolidis and Nikolaos S. Tachos and Dimitrios I. Fotiadis},
+keywords = {Synthetic data generation, Data privacy, Healthcare, Artificial intelligence, Tabular data, Imaging data, Radiomics data, Time-series data, Omics data, Multimodal data},
+abstract = {Synthetic data generation has emerged as a promising solution to overcome the challenges which are posed by data scarcity and privacy concerns, as well as, to address the need for training artificial intelligence (AI) algorithms on unbiased data with sufficient sample size and statistical power. Our review explores the application and efficacy of synthetic data methods in healthcare considering the diversity of medical data. To this end, we systematically searched the PubMed and Scopus databases with a great focus on tabular, imaging, radiomics, time-series, and omics data. Studies involving multi-modal synthetic data generation were also explored. The type of method used for the synthetic data generation process was identified in each study and was categorized into statistical, probabilistic, machine learning, and deep learning. Emphasis was given to the programming languages used for the implementation of each method. Our evaluation revealed that the majority of the studies utilize synthetic data generators to: (i) reduce the cost and time required for clinical trials for rare diseases and conditions, (ii) enhance the predictive power of AI models in personalized medicine, (iii) ensure the delivery of fair treatment recommendations across diverse patient populations, and (iv) enable researchers to access high-quality, representative multimodal datasets without exposing sensitive patient information, among others. We underline the wide use of deep learning based synthetic data generators in 72.6 % of the included studies, with 75.3 % of the generators being implemented in Python. A thorough documentation of open-source repositories is finally provided to accelerate research in the field.}
+}
+
+@article{no2_state_of_the_art_23,
+AUTHOR = {Goyal, Mandeep and Mahmoud, Qusay H.},
+TITLE = {A Systematic Review of Synthetic Data Generation Techniques Using Generative AI},
+JOURNAL = {Electronics},
+VOLUME = {13},
+YEAR = {2024},
+NUMBER = {17},
+ARTICLE-NUMBER = {3509},
+URL = {https://www.mdpi.com/2079-9292/13/17/3509},
+ISSN = {2079-9292},
+ABSTRACT = {Synthetic data are increasingly being recognized for their potential to address serious real-world challenges in various domains. They provide innovative solutions to combat the data scarcity, privacy concerns, and algorithmic biases commonly used in machine learning applications. Synthetic data preserve all underlying patterns and behaviors of the original dataset while altering the actual content. The methods proposed in the literature to generate synthetic data vary from large language models (LLMs), which are pre-trained on gigantic datasets, to generative adversarial networks (GANs) and variational autoencoders (VAEs). This study provides a systematic review of the various techniques proposed in the literature that can be used to generate synthetic data to identify their limitations and suggest potential future research areas. The findings indicate that while these technologies generate synthetic data of specific data types, they still have some drawbacks, such as computational requirements, training stability, and privacy-preserving measures which limit their real-world usability. Addressing these issues will facilitate the broader adoption of synthetic data generation techniques across various disciplines, thereby advancing machine learning and data-driven solutions.},
+DOI = {10.3390/electronics13173509}
+}
+
+@article{a1_tabular,
+AUTHOR = {Alqulaity, Malak and Yang, Po},
+TITLE = {Enhanced Conditional GAN for High-Quality Synthetic Tabular Data Generation in Mobile-Based Cardiovascular Healthcare},
+JOURNAL = {Sensors},
+VOLUME = {24},
+YEAR = {2024},
+NUMBER = {23},
+ARTICLE-NUMBER = {7673},
+URL = {https://www.mdpi.com/1424-8220/24/23/7673},
+PubMedID = {39686209},
+ISSN = {1424-8220},
+ABSTRACT = {The generation of synthetic tabular data has emerged as a critical task in various fields, particularly in healthcare, where data privacy concerns limit the availability of real datasets for research and analysis. This paper presents an enhanced Conditional Generative Adversarial Network (GAN) architecture designed for generating high-quality synthetic tabular data, with a focus on cardiovascular disease datasets that encompass mixed data types and complex feature relationships. The proposed architecture employs specialized sub-networks to process continuous and categorical variables separately, leveraging metadata such as Gaussian Mixture Model (GMM) parameters for continuous attributes and embedding layers for categorical features. By integrating these specialized pathways, the generator produces synthetic samples that closely mimic the statistical properties of the real data. Comprehensive experiments were conducted to compare the proposed architecture with two established models: Conditional Tabular GAN (CTGAN) and Tabular Variational AutoEncoder (TVAE). The evaluation utilized metrics such as the Kolmogorov–Smirnov (KS) test for continuous variables, the Jaccard coefficient for categorical variables, and pairwise correlation analyses. Results indicate that the proposed approach attains a mean KS statistic of 0.3900, demonstrating strong overall performance that outperforms CTGAN (0.4803) and is comparable to TVAE (0.3858). Notably, our approach shows lowest KS statistics for key continuous features, such as total cholesterol (KS = 0.0779), weight (KS = 0.0861), and diastolic blood pressure (KS = 0.0957), indicating its effectiveness in closely replicating real data distributions. Additionally, it achieved a Jaccard coefficient of 1.00 for eight out of eleven categorical variables, effectively preserving categorical distributions. These findings indicate that the proposed architecture captures both distributions and dependencies, providing a robust solution in supporting mobile personalized cardiovascular disease prevention systems.},
+DOI = {10.3390/s24237673}
+}
+
+@article{a3_SD_for_validating,
+author = {Theodoros N Arvanitis and Sean White and Stuart Harrison and Rupert Chaplin and George Despotou},
+title ={A method for machine learning generation of realistic synthetic datasets for validating healthcare applications},
+journal = {Health Informatics Journal},
+volume = {28},
+number = {2},
+pages = {14604582221077000},
+year = {2022},
+doi = {10.1177/14604582221077000},
+note ={PMID: 35414269},
+URL = { https://doi.org/10.1177/14604582221077000 },
+eprint = { https://doi.org/10.1177/14604582221077000 },
+abstract = { Digital health applications can improve quality and effectiveness of healthcare, by offering a number of new tools to users, which are often considered a medical device. Assuring their safe operation requires, amongst others, clinical validation, needing large datasets to test them in realistic clinical scenarios. Access to datasets is challenging, due to patient privacy concerns. Development of synthetic datasets is seen as a potential alternative. The objective of the paper is the development of a method for the generation of realistic synthetic datasets, statistically equivalent to real clinical datasets, and demonstrate that the Generative Adversarial Network (GAN) based approach is fit for purpose. A generative adversarial network was implemented and trained, in a series of six experiments, using numerical and categorical variables, including ICD-9 and laboratory codes, from three clinically relevant datasets. A number of contextual steps provided the success criteria for the synthetic dataset. A synthetic dataset that exhibits very similar statistical characteristics with the real dataset was generated. Pairwise association of variables is very similar. A high degree of Jaccard similarity and a successful K-S test further support this. The proof of concept of generating realistic synthetic datasets was successful, with the approach showing promise for further work. }
+}
+
+@article{gan,
+  title={Generative adversarial nets},
+  author={Goodfellow, Ian J and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  journal={Advances in neural information processing systems},
+  volume={27},
+  year={2014}
+}
+
+@article{WGAN_GP,
+  title={Improved training of wasserstein gans},
+  author={Gulrajani, Ishaan and Ahmed, Faruk and Arjovsky, Martin and Dumoulin, Vincent and Courville, Aaron C},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+
+@article{medWGAN,
+  title={Synthesizing electronic health records using improved generative adversarial networks},
+  author={Baowaly, Mrinal Kanti and Lin, Chia-Ching and Liu, Chao-Lin and Chen, Kuan-Ta},
+  journal={Journal of the American Medical Informatics Association},
+  volume={26},
+  number={3},
+  pages={228--241},
+  year={2019},
+  publisher={Oxford Academic}
+}
+
+@article{KSTest,
+  title={The Kolmogorov-Smirnov test for goodness of fit},
+  author={Massey Jr, Frank J},
+  journal={Journal of the American statistical Association},
+  volume={46},
+  number={253},
+  pages={68--78},
+  year={1951},
+  publisher={Taylor \& Francis}
+}
+
+@article{JaccardTest,
+  title={Further generalizations of the Jaccard index},
+  author={Costa, Luciano da F},
+  journal={arXiv preprint arXiv:2110.09619},
+  year={2021}
+}
