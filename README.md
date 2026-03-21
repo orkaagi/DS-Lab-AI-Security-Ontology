@@ -8,6 +8,7 @@ years)
 - Select 3 baseline methods from related work
 - Choose datasets used in baselines (or similar public datasets)
 - Perform initial data understanding and documentation– Conduct full exploratory data analysis (EDA)
-- Start implementing baseline methods– Initialize Overleaf and GitHub repository plus add your papers to
+- Start implementing baseline methods
+- Initialize Overleaf and GitHub repository plus add your papers to
 Mendeley or similar libraries and create a spreadsheet with paper
 information(Title, data, publisher, datasets, method, limitation)
