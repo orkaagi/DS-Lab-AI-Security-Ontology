@@ -13,7 +13,7 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Constructing an AI Security Ontology}
+\title{LLM-Assisted Development of an AI Security Ontology}
 \author{Ágnes Biborka\\
 Eötvös Loránd University, Budapest, Hungary}
 
@@ -23,23 +23,81 @@ Eötvös Loránd University, Budapest, Hungary}
 %\begin{abstract}
 %\end{abstract}
 
-%\section{Introduction}
+\section{Introduction}
 %Provide a brief overview of your chosen topic, its importance, and the motivation behind studying it.
 
+Ontologies and Knowledge Graphs (KGs) can be used to enhance knowledge sharing, that is why they are a useful tool both in industry and research. An AI Security Ontology could help stakeholders in the security domain better understand AI security concepts and how they are related to each other.
+
+Knowledge Graph and Ontology Engineering (KGOE) traditionally requires human expertise and is very time consuming \cite{Poveda-Villaln2022}. Recent studies suggest that LLMs can be a good tool to assist the development of an ontology \cite{Shimizu2025, Kommineni2024}, since LLMs have strong language capabilities, can capture specific knowledge and extract keywords \cite{Shimizu2025, Kommineni2024}.
+
+%"Ontologies are formal models that describe concepts and relations of a domain." \cite{Garca-Fernndez2025}
 
 %\section{Main Contribution}
 %Explain what the study intends to explore or address. Clarify the relevance of the topic and why it is worth investigating.
 
-\section{Background study}
+%\section{Background study}
 %Organize this section into meaningful subsections based on themes, methods, or research areas. Each subsection should summarize findings from relevant studies, compare approaches, and highlight key insights from existing literature.
 
-\subsection{Methods}
+%Three common online sources are used to investigate ontology development and AI Security related studies. These online sources are Google Scholar, IEEE-Xplore and ACM Digital Library. The search dates were restricted for the past 5 years, from 2021 to 2026.
+
+%The following keyword phrases were used to perform the search: "ontology methodology", "ontology development", "ontology processes", "AI security" and "ML security".
+
+\section{Related Work}
+
+I investigated ontology modeling using Google Scholar. I found that there are many tasks related to Ontology Development: ontology modeling, population, extension, modification and alignment as well as entity disambiguation \cite{Shimizu2025}. LLMs can assist humans in one or multiple tasks, e.g.:
+\begin{itemize}
+    \item a concept hierarchy for a given domain can be constructed by querying an LLM \cite{Funk2023},
+    \item in the evaluation phase LLMs can verify ontology restrictions \cite{Tsaneva2024},
+    \item formulating competency questions (CQs), developing an ontology  based on these CQs, constructing KGs using the developed ontology, and evaluating the resultant KG can be (semi-)automated \cite{Kommineni2024}.
+\end{itemize}
+
+%LLMs can be used in various phases of ontology construction and can be used to different extent. 
+
+Furthermore, I found the following Ontology Engineering Frameworks:
+\begin{itemize}
+    \item \textbf{Ontology Extension Workflow} \cite{Garca-Fernndez2025}: the process framework provides customizable prompt templates, ontology engineering tools and guidelines.
+    \item \textbf{Linked Open Terms} \cite{Poveda-Villaln2022}: a lightweight methodology for building ontology based on existing methodologies.
+\end{itemize}
+
+I found research about a Deep Neural Network Security KG \cite{Altoub2022} as well as about Ransomware Ontology \cite{Keshavarzi2023}.
+
+\subsection{Baseline Methods For Ontology Development}
+
+%I grouped my findings into two categories: traditional methods and LLM-assisted methods.
+
+\subsection{Traditional Approach}
+
+\textbf{TITO} \cite{Alfaifi2022}:
+\begin{itemize}
+    \item Method: Simple Knowledge-Engineering Methodology.
+    \item Tools: Portégé, an ontology editor tool.
+    \item Data source: the website of University of Tabuk.
+\end{itemize}
+
+\subsection{LLM-Assisted Methods}
+
+\textbf{Artificial Intelligence Ontology} \cite{Joachimiak2024}:
+\begin{itemize}
+    \item Method: ROBOT templates for each of the main ontology branches created manually and populated using both manual and automated methods. LLMs were used to improve definitions, final definitions were human-reviewed.
+    \item Used models: Claude 3 Sonnet, GPT-4, ROBOT-helper chatbot.
+    \item Other tools: Ontology Development Kit (ODK).
+    \item Data source: publications, Wikipedia, documentations.
+\end{itemize}
+
+\textbf{KG for Breast Cancer Treatment} \cite{Yang2024}:
+\begin{itemize}
+    \item Method: LLMs were used to formulate competency questions to extend the initial ontology and then to construct the KG based on the extended ontology.
+    \item Used models: fine-tuned ChatGPT-3.5.
+    \item Data source: publications from PubMed.
+\end{itemize}
+
+%\subsection{Methods}
 %Select 3 baseline methods from related work.
 
-\section{Datasets}
+%\section{Datasets}
 %initial data understanding and documentation
 
-\subsection{Full Exploratory Data Analysis}
+%\subsection{Full Exploratory Data Analysis}
 %full exploratory data analysis
 
 
@@ -48,7 +106,7 @@ Eötvös Loránd University, Budapest, Hungary}
 
 
 
-%\bibliographystyle{alpha}
-%\bibliography{sample}
+\bibliographystyle{alpha}
+\bibliography{references}
 
 \end{document}
