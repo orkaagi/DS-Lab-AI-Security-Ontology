@@ -1,17 +1,19 @@
 \documentclass{article}
 
 % Language setting
-% Replace `english' with e.g. `spanish' to change the document language
 \usepackage[english]{babel}
 
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
 % Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\addbibresource{references.bib}
 
 \title{LLM-Assisted Development of an AI Security Ontology}
 \author{Ágnes Biborka\\
@@ -91,7 +93,31 @@ I found research about a Deep Neural Network Security KG \cite{Altoub2022} as we
     \item Data source: publications from PubMed.
 \end{itemize}
 
-%\subsection{Methods}
+\section{Research Methodology}
+
+The GitHub repository set up for the project can be accessed at \href{https://github.com/orkaagi/DS-Lab-AI-Security-Ontology}{https://github.com/orkaagi/DS-Lab-AI-Security-Ontology}.
+
+\subsection{Research Questions}
+
+I listed the following main research questions (MRQs) to define the main goal of the research. I also added subresearch questions to further specify the goal.
+
+\begin{itemize}
+    \item \textbf{MRQ1:} What are the existing LLM assisted methods to develop an ontology?
+    \item \textbf{MRQ2:} What LLM assisted method is the most efficient/could be used to develop an AI Security Ontology?
+\end{itemize}
+
+\subsection{Method}
+
+Similarly to \cite{Yang2024} I am planning to execute the following steps:
+
+\begin{enumerate}
+    \item \textbf{Step 1}: Create an initial ontology based on literature and Introduction to Data Security course materials.
+    \item \textbf{Step 2}: Query an LLM to obtain competency questions and use it to expand the initial ontology. Query repeatedly, to enhance competency questions and obtain a more thorough ontology. 
+    \item \textbf{Step 3}: Use LLM to answer the competency questions and create a knowledge graph from the ontology.
+\end{enumerate}
+
+Performing Step 2 repeatedly is an addition to the baseline method described in \cite{Yang2024}, it was merely mentioned in its future work.
+
 %Select 3 baseline methods from related work.
 
 %\section{Datasets}
@@ -105,8 +131,6 @@ I found research about a Deep Neural Network Security KG \cite{Altoub2022} as we
 %Add a dedicated subsection clearly identifying what is missing in the current literature: limitations, unexplored angles, methodological weaknesses, or new opportunities for investigation.
 
 
-
-\bibliographystyle{alpha}
-\bibliography{references}
+\printbibliography
 
 \end{document}
