@@ -1,0 +1,11 @@
+a. term elicitation
+
+attack category**
+lifecycle phase - (Data acquisition, Data pre-processing, Training, Exploitation)
+core principle - (Confidentiality, Integrity, Availability)
+model type - (ML, Classification, Anomaly detection, Clustering, Pattern mining and association rules, Regression, Generative AI/LLM, Agentic AI)
+attacker**
+attacker's goal***
+access level - (Whitebox, Gray box, Blackbox)
+skill level - (Beginner, Advanced, Highly skilled)
+mitigation**
